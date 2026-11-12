@@ -1,0 +1,39 @@
+h1, h2{
+            color:black;
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            color: black;
+        }
+
+        header{
+            padding: 20px;
+        }
+
+        main{
+            margin: auto 15%;
+        }
+
+        .destaque{
+            background-color: rgb(214, 112, 28);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #img-logo{
+            width: 50px;
+        }
+
+        nav li{
+            display: inline;
+            margin-left: 20px;
+            font-weight: bold;
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        nav{
+            float: right;
+        }
