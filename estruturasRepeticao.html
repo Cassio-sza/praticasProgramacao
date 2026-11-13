@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição - While</title>
+
+    <script>
+
+        /*
+        Criar um programa que pergunta a quantidade de notas, quais as notas e entrega a média.
+        */
+
+        // Declara as variáveis
+        let contador = 1
+        let nota = 0
+        const qtd = prompt('Quantas notas?')
+        let soma = 0
+
+        // Laço de repetição
+        while (contador <= qtd){
+            nota = Number(prompt('Digite a nota nº ' + contador))   // formatado para número para que seja feita a operação aritmética.
+            soma = nota + soma
+            console.log('Nota ' + contador +': ' + nota )   //  imprime a contagem da nota e o valor de cada
+            contador++
+        }
+
+        // Encontra a média
+        let media = soma / qtd
+
+        console.log('Soma: ' + soma)
+        console.log('Média: ' + media)
+
+        // Laço de condição para saber se foi Aprovado ou não
+        if (media >= 7){
+            console.log('Aprovado!')
+        } else if (media < 5){
+            console.log('Reprovado!')
+        } else {
+            console.log('Recuperação!')
+        }
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

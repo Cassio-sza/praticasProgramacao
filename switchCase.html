@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+
+    <script>
+
+        /*
+            O Switch case é usado para situações em que precisemos verificar dentro de uma variável com valores ja pré estabelecidos
+            Para escolher entre as opções e de acordo com cada uma, executar um comando específico.
+        */
+
+        /*
+            Verificar o aumento de salário de acordo com os seguintes cargos:
+            - Estagiário: 100%
+            - Analista: 50%
+            - Gerente: 30%
+            - Presidente: 10%
+        */
+
+        const salario = prompt('Digite o salário:')
+        const cargo = prompt('Digite o cargo: ')
+        let aumento = 0
+
+        switch(cargo){
+            case 'Estagiario':  aumento = 100/100;  break;
+            case 'Analista':    aumento = 50/100;   break;
+            case 'Gerente':     aumento = 30/100;   break;
+            case 'Presidente':  aumento = 10/100;   break;
+            default: alert('Digite um cargo válido!')
+        }
+
+        let novoSalario = salario + (salario * aumento)
+
+        console.log('O aumento é de ' + (salario * aumento))
+        console.log('O valor do novo salário é de: ' + novoSalario)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
