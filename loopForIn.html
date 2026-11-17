@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição - For In</title>
+
+    <script>
+        /* Usada para iterar sobre objetos
+        */
+
+        let Pessoa = {
+            nome:'Paulo',
+            telefone: '(48)98155-1548',
+            endereco: 'Rua das Flores'
+        }
+
+        // Laço de repetição que itera sobre os atributos do objeto e os exibe
+        for(let atributo in Pessoa){
+            console.log(atributo + ': ' + Pessoa[atributo])
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
